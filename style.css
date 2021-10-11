@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: black;
+    line-height: 1.6;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    /* line-height: 1.2; */
+    /* margin: 10px 0; */
+}
+
+p {
+    margin: 10px 0;
+}
+
+
+/* img {
+    width: 100%;
+} */
+
+.navbar {
+    background-image: url(./utils/images/hero-bg-desktop.jpg);
+    color: white;
+    height: 550%;
+    position: relative;
+}
+
+.logo-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 50%;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.logo h1 {
+    max-width: 1000px;
+}
+
+
+/* .container .logo {
+    margin: 50px 0;
+} */
+
+.reserve h1 {
+    font-size: 30px;
+}
+
+.reserve p {
+    /* margin: 20px 0; */
+}
+
+.grid {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 35px;
+}
+
+.reserve-text h1 {
+    font-size: 70px;
+    /* margin: 0 auto;
+    gap: 20px;
+    padding-left: 0px;
+    height: 100%;
+    max-width: 1100px; */
+}
+
+.reserve-text p {
+    font-size: 16px;
+    line-height: 1.2;
+    padding-bottom: 50px;
+}
+
+.reserve {
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    gap: 20%;
+    height: 100%;
+    max-width: 1000px;
+}
+
+.reserve .grid {
+    overflow: visible;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 20px 20px 50px 15px gray;
+    position: relative;
+    /* color: #333;
+    padding: 20px;
+    margin: 10px; */
+}
+
+.reserve-form {
+    /* position: absolute; */
+    height: 350px;
+    top: 70px;
+    width: 350px;
+    padding: 5px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+.reserve-form .form-control {
+    margin: 25px;
+}
+
+.reserve-form input[type='text'],
+.reserve-form input[type='email'],
+.reserve-form input[type='date'],
+.reserve-form input[type='time'] {
+    border: 0;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+}
+
+.reserve-form input:focus {
+    outline: 0;
+}
+
+.reserve-form .card {
+    /* width: 100%; */
+    height: 450px;
+}
+
+.card .btn {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 14px 36px;
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.center-image {
+    background-image: url(./utils/patterns/pattern-curve-bottom-right.svg);
+    height: 250px;
+    width: 100%;
+    /* text-align: center; */
+    /* padding: 20px; */
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    /* position: relative; */
+}
+
+.curve-image {
+    position: relative;
+    /* display: flex; */
+}
+
+.curve-img {
+    position: absolute;
+    width: 70%;
+    height: 250px;
+}
+
+.line-img {
+    display: block;
+    /* margin-left: 10px;
+    margin-right: auto; */
+    margin-left: 50%;
+    width: 10%;
+    padding-top: 100px;
+}
+
+
+/* .center-image .curve-image {
+    width: 40%;
+    height: 100px;
+    justify-content: center;
+    /* display: flex; */
+
+*/
+/* .center-image .line-image {
+    background-image: url(./utils/patterns/pattern-lines.svg);
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    height: 50px; */
+
+
+/* padding-top: 70px; */
+
+
+/* } */
+
+.footer-cont {
+    background-image: url(./utils/images/hero-bg-desktop.jpg);
+}
+
+.container-footer {
+    /* background-color: blue; */
+    color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 50%;
+    overflow: auto;
+    padding: 0 40px;
+    /* display: flex; */
+}
+
+.container-footer .footer-text {
+    display: flex;
+}
+
+.footer-text {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/* .footer .footer-text-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+} */
+
+@media(max-width: 768px) {}
+
+@media(max-width:500px) {
+    .navbar {
+        background-image: url(./utils/images/hero-bg-mobile@2x.jpg);
+        height: 100%;
+    }
+    .grid {
+        flex-direction: column;
+        /* gap: 30px; */
+    }
+    .reserve p {
+        text-align: center;
+    }
+    .reserve h1 {
+        text-align: center;
+    }
+}
